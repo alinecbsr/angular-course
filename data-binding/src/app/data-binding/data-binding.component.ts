@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
+  urlImage:string = 'https://i.picsum.photos/id/33/200/300.jpg?grayscale&hmac=OINt-C6qfyzfVlO7Stl4dcwDjbzvHPBtAWabNlNZKfM';
   url:string = 'http://loiane.com';
-
   angularCourse:boolean = true;
 
   getValue() {
