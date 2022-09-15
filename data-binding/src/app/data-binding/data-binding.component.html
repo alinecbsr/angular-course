@@ -1,4 +1,4 @@
-<section class="property-binding">
+<!-- <section class="property-binding">
   <article>
     <h3>Interpolation</h3>
     <p>String rendered with interpolation: {{ url }}</p>
@@ -55,13 +55,23 @@
 
     </div>
   </article>
-</section>
+</section> -->
 
 <section class="input-output-properties">
   <article>
     <h3>Input/Output Properties</h3>
 
     <app-course [name]="courseName"></app-course>
+
+    <!-- <counter value="15"></counter> -->
+    <!-- In the use the a fixed value is not necessary the use the property binding -->
+
+    <counter
+      [value]="initialValue"
+      (changedValue)="onChangedValue($event)">
+    </counter>
+    <!-- The value is a variable and need this property binding -->
+
   </article>
 
 </section>
