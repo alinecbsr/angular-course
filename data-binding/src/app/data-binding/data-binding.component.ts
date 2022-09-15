@@ -11,6 +11,8 @@ export class DataBindingComponent implements OnInit {
   url:string = 'http://loiane.com';
   angularCourse:boolean = true;
 
+  courseName: string = 'Angular';
+
   getValue() {
     return 1;
   }
