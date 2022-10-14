@@ -1,1 +1,29 @@
-<p>directive-ngif works!</p>
+<h5>*ngIf with conditional</h5>
+<div *ngIf="courses.length > 0" >
+  Course list here
+</div>
+<div *ngIf="courses.length == 0" >
+  There are no courses to be listed here
+</div>
+<br><br>
+
+<h5>*ngIf with boolean</h5>
+<div *ngIf="showCourses" >
+  Course list here
+</div>
+<div *ngIf="!showCourses" >
+  There are no courses to be listed here
+</div>
+<br><br>
+
+<button (click)="onShowCourses()">Show courses or not</button>
+<br><br>
+
+<h5>*hidden as an alternative</h5>
+<div [hidden]="!showCourses" >
+  Course list here
+</div>
+<div [hidden]="showCourses" >
+  There are no courses to be listed here
+</div>
+<br><br>
