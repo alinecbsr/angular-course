@@ -1,0 +1,17 @@
+<h1>
+  <i class="bi"
+    [class.bi-star]="!myFavorite"
+    [class.bi-star-fill]="myFavorite"
+    (click)="onClick()">
+  </i>
+</h1>
+<br><br>
+
+<h1>
+  <i class="bi"
+    [ngClass]="{
+      'bi-star': !myFavorite,
+      'bi-star-fill': myFavorite
+    }"
+    (click)="onClick()"></i>
+</h1>
