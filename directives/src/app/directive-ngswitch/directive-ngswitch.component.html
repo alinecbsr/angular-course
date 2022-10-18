@@ -25,3 +25,18 @@
   <p *ngSwitchCase="'list'">Active List Mode</p>
   <p *ngSwitchDefault>Home</p>
 </div>
+<br><br>
+
+<h5>Removing the * and using template</h5>
+
+<div class="container" [ngSwitch]="tab"  >
+  <ng-template [ngSwitchCase]="'map'">
+    <p>Active Map Mode</p>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'list'">
+    <p>Active List Mode</p>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'home'" ngSwitchDefault>
+    <p>Home</p>
+  </ng-template>
+</div>

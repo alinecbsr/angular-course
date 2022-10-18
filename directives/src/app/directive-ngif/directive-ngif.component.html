@@ -27,3 +27,13 @@
   There are no courses to be listed here
 </div>
 <br><br>
+
+<h5>Removing the * and using template</h5><br>
+
+<ng-template [ngIf]="showCourses">
+  <div>Course list here.</div>
+</ng-template><br>
+
+<div ng-template="ngIf showCourses">
+  Course list here.
+</div>
