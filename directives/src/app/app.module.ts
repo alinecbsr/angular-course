@@ -9,6 +9,7 @@ import { DirectiveNgforComponent } from './directive-ngfor/directive-ngfor.compo
 import { DirectiveNgclassComponent } from './directive-ngclass/directive-ngclass.component';
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
 import { OperatorElvisComponent } from './operator-elvis/operator-elvis.component';
+import { ExampleNgContentComponent } from './example-ng-content/example-ng-content.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { OperatorElvisComponent } from './operator-elvis/operator-elvis.componen
     DirectiveNgforComponent,
     DirectiveNgclassComponent,
     DirectiveNgstyleComponent,
-    OperatorElvisComponent
+    OperatorElvisComponent,
+    ExampleNgContentComponent
   ],
   imports: [
     BrowserModule,
