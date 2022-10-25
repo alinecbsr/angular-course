@@ -10,6 +10,8 @@ import { DirectiveNgclassComponent } from './directive-ngclass/directive-ngclass
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
 import { OperatorElvisComponent } from './operator-elvis/operator-elvis.component';
 import { ExampleNgContentComponent } from './example-ng-content/example-ng-content.component';
+import { BkgYellowDirective } from './shared/bkg-yellow.directive';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ExampleNgContentComponent } from './example-ng-content/example-ng-conte
     DirectiveNgclassComponent,
     DirectiveNgstyleComponent,
     OperatorElvisComponent,
-    ExampleNgContentComponent
+    ExampleNgContentComponent,
+    BkgYellowDirective,
+    CustomDirectiveComponent
   ],
   imports: [
     BrowserModule,
